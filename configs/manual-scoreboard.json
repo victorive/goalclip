@@ -1,0 +1,13 @@
+{
+  "name": "pinned-scoreboard",
+  "frame": { "width": 1280, "height": 720 },
+
+  "scoreboard": {
+    "x": 40, "y": 30, "w": 360, "h": 60,
+    "scale": 3,
+    "threshold": 0,
+    "invert": true,
+    "pattern": "(\\d{1,2})\\s*[-:]\\s*(\\d{1,2})",
+    "stable_frames": 3
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "my-broadcast",
+  "frame": { "width": 1280, "height": 720, "interval_seconds": 1 },
+
+  "auto_scoreboard": {
+    "enabled": true,
+    "sample_every_seconds": 5,
+    "min_samples": 8,
+    "max_samples": 24,
+    "min_presence": 0.6,
+    "search_seconds": 1800,
+    "remind_every_seconds": 300,
+    "relost_seconds": 600,
+    "audio_fallback": false
+  },
+
+  "audio": {
+    "enabled": true,
+    "threshold_db": 8,
+    "baseline_seconds": 60,
+    "fast_seconds": 1.5,
+    "sustain_seconds": 3,
+    "refractory_seconds": 20
+  },
+
+  "fusion": {
+    "confirm_delay_seconds": 15,
+    "retract_window_seconds": 300,
+    "review_clips": true,
+    "review_wait_seconds": 40,
+    "review_min_confidence": 0.8,
+    "audio_window_seconds": 30,
+    "score_lag_seconds": 8,
+    "cooldown_seconds": 60,
+    "audio_only_min_confidence": 0.6
+  },
+
+  "clip": { "pre_seconds": 20, "post_seconds": 20, "reencode": false },
+  "buffer": { "retain_seconds": 300, "segment_seconds": 2 },
+  "ingest": { "stall_timeout_seconds": 20, "freeze_seconds": 20, "backoff_max_seconds": 30 }
+}
